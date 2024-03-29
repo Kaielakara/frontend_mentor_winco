@@ -1,5 +1,17 @@
 {% extends 'gamearena/_base.html' %}
+{% load static %}
 
 {% block content %}
-  <h1 class="text-3xl text-green-800">Django + Tailwind CSS + Flowbite</h1>
+  <nav>
+    <div class="nav__img">
+      <img src="{% static 'gamearena/assets/images/logo.svg' %}" alt="" />
+    </div>
+    <div class="nav__list">
+      <ul>Home</ul>
+      <ul>New</ul>
+      <ul>Popular</ul>
+      <ul>Trending</ul>
+      <ul>Categories</ul>
+    </div>
+  </nav>
 {% endblock %}
